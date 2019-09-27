@@ -27,7 +27,7 @@ class SimpleHttpLogger implements Logger
      *
      * @throws \BadMethodCallException
      */
-    public function __construct($options = [])
+    public function __construct($options = array())
     {
         $defaults = array(
             'host' => 'http://127.0.0.1:9144',
