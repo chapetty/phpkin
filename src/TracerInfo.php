@@ -41,8 +41,8 @@ class TracerInfo
         static::setSampled($sampler);
 
         # FIXME: Class name constant is available in PHP 5.5 only
-        static::setIdentifier('traceId', $traceId, TraceIdentifier::class);
-        static::setIdentifier('traceSpanId', $traceSpanId, SpanIdentifier::class);
+        static::setIdentifier('traceId', $traceId, 'whitemerry\phpkin\Identifier\TraceIdentifier');
+        static::setIdentifier('traceSpanId', $traceSpanId, 'whitemerry\phpkin\Identifier\SpanIdentifier');
     }
 
     /**

@@ -66,8 +66,8 @@ class Span
         $this->setMetadata($metadata);
 
         # FIXME: Class name constant is available in PHP 5.5 only
-        $this->setIdentifier('traceId', $traceId, array(TracerInfo::class, 'getTraceId'));
-        $this->setIdentifier('parentId', $parentId, array(TracerInfo::class, 'getTraceSpanId'));
+        $this->setIdentifier('traceId', $traceId, array('whitemerry\phpkin\TracerInfo', 'getTraceId'));
+        $this->setIdentifier('parentId', $parentId, array('whitemerry\phpkin\TracerInfo', 'getTraceSpanId'));
     }
 
     /**
